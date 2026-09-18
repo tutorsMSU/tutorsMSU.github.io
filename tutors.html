@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Наши преподаватели</title>
+    <!-- Подключаем те же стили -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-inner container">
+            <a href="index.html" class="logo">EduPlatform</a>
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="tutors.html">Преподаватели</a>
+                <a href="rules.html">Регламент</a>
+                <a href="index.html#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section style="padding: 100px 0 60px 0; background: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 36px; color: var(--text-dark); margin-bottom: 10px;">Команда специалистов</h2>
+            <p style="color: var(--text-medium); font-size: 18px;">Каждый наш преподаватель — эксперт в своем деле и студент ведущего вуза.</p>
+        </div>
+    </section>
+
+    <!-- Грид карточек. Увеличим отступы для "воздуха" -->
+    <div class="container" style="margin-top: 40px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+            
+            <!-- Карточка Ивана Петрова (адаптирована под новые цвета) -->
+            <div class="card">
+                <img src="placeholder.jpg" alt="Иван Петров" style="width: 100%; height: 240px; object-fit: cover; border-radius: 16px 16px 0 0;">
+                <div style="padding: 30px; text-align: center;">
+                    <img src="placeholder.jpg" alt="Аватар" style="width: 100px; height: 100px; border-radius: 50%; border: 4px solid var(--bg-light); margin-top: -60px; background: white; box-shadow: 0 4px 10px var(--shadow-soft);">
+                    <h3 style="margin-top: 20px; color: var(--text-dark);">Иван Петров</h3>
+                    <p style="color: var(--primary-color); font-weight: 600;">Математика • Физика</p>
+                    <p style="color: var(--text-medium); line-height: 1.6;">Эксперт ЕГЭ, стаж 12 лет. Средний балл учеников — 85+. Автор собственной методики решения задач второй части.</p>
+                    <p style="font-size: 20px; font-weight: bold; color: var(--text-dark); margin: 20px 0;">2000 ₽ / 60 мин</p>
+                    <a href="ivan.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <!-- Карточка Аскара Шафикова -->
+            <div class="card">
+                 <img src="placeholder.jpg" alt="Аскар Шафиков" style="width: 100%; height: 240px; object-fit: cover; border-radius: 16px 16px 0 0;">
+                <div style="padding: 30px; text-align: center;">
+                    <img src="placeholder.jpg" alt="Аватар" style="width: 100px; height: 100px; border-radius: 50%; border: 4px solid var(--bg-light); margin-top: -60px; background: white; box-shadow: 0 4px 10px var(--shadow-soft);">
+                    <h3 style="margin-top: 20px; color: var(--text-dark);">Аскар Шафиков</h3>
+                    <p style="color: var(--primary-color); font-weight: 600;">Химия • Биология</p>
+                    <p style="color: var(--text-medium); line-height: 1.6;">Студент МГУ. Призер ВсОШ по биологии и экологии. Глубокое знание анатомии и органической химии.</p>
+                    <p style="font-size: 20px; font-weight: bold; color: var(--text-dark); margin: 20px 0;">1200 ₽ / 60 мин</p>
+                    <a href="shafikov.html" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <!-- Сюда ты будешь копировать блок выше для новых учителей -->
+
+        </div>
+    </div>
+
+    <footer style="margin-top: 100px;">
+        <div class="container">
+            <p>&copy; 2025 EduPlatform. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
