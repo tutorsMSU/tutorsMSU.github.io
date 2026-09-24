@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аскар Шафиков - Репетитор по химии и биологии</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+        .container { width: 90%; max-width: 1000px; margin: auto; overflow: hidden; padding: 20px; }
+        header { background: #2c3e50; color: #ffffff; padding-top: 20px; min-height: 70px; border-bottom: 5px solid #e74c3c; }
+        header a { color: #ffffff; text-decoration: none; font-size: 18px; margin-right: 15px; }
+        .profile-header { display: flex; align-items: center; gap: 30px; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); margin-bottom: 30px; }
+        .profile-pic { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 5px solid #ecf0f1; }
+        .profile-text h1 { margin: 0 0 10px 0; color: #2c3e50; }
+        .badge { display: inline-block; background: #27ae60; color: white; padding: 5px 12px; border-radius: 20px; font-size: 14px; margin-left: 10px; vertical-align: middle; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-box { background: #fff; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-top: 4px solid #3498db; }
+        .stat-number { font-size: 28px; font-weight: bold; color: #2980b9; }
+        .olympiads-list li { background: #e8f6ff; margin-bottom: 10px; padding: 15px; border-left: 4px solid #3498db; border-radius: 6px; }
+        .bio-box { background: #fffbea; border: 1px solid #ffeaa7; padding: 20px; border-radius: 8px; margin-top: 30px; }
+        .back-link { display: inline-block; margin-top: 20px; color: #2c3e50; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 style="float:left;">EduPlatform</h1>
+            <nav style="float:right;">
+                <a href="index.html">Главная</a>
+                <a href="tutors.html">Наши преподаватели</a>
+                <a href="rules.html">Регламент</a>
+                <a href="index.html#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Главный блок профиля -->
+        <div class="profile-header">
+            <img src="placeholder.jpg" alt="Фото Аскара" class="profile-pic">
+            <div class="profile-text">
+                <h1>Шафиков Аскар Русланович <span class="badge">Эксперт</span></h1>
+                <p><strong>Специализация:</strong> Подготовка к ЕГЭ по Химии и Биологии | Разбор заданий второй части</p>
+                <p><strong>Образование:</strong> МГУ имени М. В. Ломоносова</p>
+                <p><strong>Опыт:</strong> 1 год частной практики</p>
+                <p><strong>Цена:</strong> 1200 ₽ / 60 мин</p>
+                <a href="#form" class="btn">Записаться на занятие</a>
+            </div>
+        </div>
+
+        <!-- Ключевые цифры -->
+        <h2 style="text-align:center; color:#2c3e50;">Результаты в цифрах</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">100</div>
+                <div>Балл ЕГЭ по химии</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">95</div>
+                <div>Балл ЕГЭ по биологии</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">0+</div>
+                <div>Выпускников (начинающий преподаватель)</div>
+            </div>
+        </div>
+
+        <!-- Олимпиады -->
+        <h2 style="color:#2c3e50;">Олимпиадные достижения</h2>
+        <p>Мои собственные высокие баллы позволяют понимать структуру экзаменов изнутри и учить не просто зубрить, а мыслить как составитель тестов.</p>
+        <ul class="olympiads-list">
+            <li>🥉 Призер Всероссийской олимпиады школьников (ВсОШ) по биологии — 2024/2025 сезон</li>
+            <li>🥉 Призер ВсОШ по биологии — 2023/2024 сезон</li>
+            <li>🥉 Призер ВсОШ по экологии — 2024/2025 сезон</li>
+            <li>Участник заключительного этапа ВсОШ по экологии — 2023/2024 сезон</li>
+        </ul>
+
+        <!-- Личное -->
+        <div class="bio-box">
+            <h3 style="margin-top:0; color:#d35400;">Немного личного</h3>
+            <p>"Я убежден, что химия и биология — это самые логичные науки. Моя задача — показать эту красоту ученику. Когда мы не на уроках, я люблю читать научную фантастику и заниматься бегом — это помогает держать ум в тонусе".</p>
+        </div>
+
+        <!-- Форма записи -->
+        <h2 id="form" style="color:#2c3e50;">Запись на занятие</h2>
+        <p>Оставьте заявку, и мы договоримся о бесплатном 20-минутном знакомстве.</p>
+        <form action="#" method="post" style="background:#fff;padding:25px;border-radius:8px;">
+            <input type="text" placeholder="Ваше имя" required style="width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;">
+            <input type="tel" placeholder="Ваш телефон" required style="width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;">
+            <select style="width:100%;padding:12px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;">
+                <option>Интересует Химия</option>
+                <option>Интересует Биология</option>
+                <option>Оба предмета</option>
+            </select>
+            <button type="submit" style="width:100%;padding:15px;background:#e74c3c;color:#fff;border:none;border-radius:6px;font-size:18px;cursor:pointer;">Отправить заявку Аскару</button>
+        </form>
+
+        <br>
+        <a href="tutors.html" class="back-link">&larr; Вернуться к списку всех преподавателей</a>
+    </div>
+</body>
+</html>
